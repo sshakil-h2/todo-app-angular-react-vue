@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Todo } from './models/todo';
 
@@ -9,7 +9,7 @@ import { Todo } from './models/todo';
 })
 export class AppComponent {
   title = 'angular-todo-app';
-  @Output() todos: Todo[] = new Array();
+  todos: Todo[] = new Array();
   nextIndex = 0;
 
   addTodo(todoText: string) {

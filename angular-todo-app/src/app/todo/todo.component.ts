@@ -21,7 +21,7 @@ export class TodoComponent implements OnChanges {
     console.log(this.todo);
   }
 
-  onDelete() {
+  onDelete(event) {
     this.deleteTodo.emit(this.todo.id);
   }
 

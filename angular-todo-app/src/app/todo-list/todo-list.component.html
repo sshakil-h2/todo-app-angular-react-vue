@@ -1,0 +1,8 @@
+<ul class="list-group" *ngIf="todos.length">
+  <h2>TodoList</h2>
+  <app-todo
+    *ngFor="let todo of todos"
+    [todo]="todo"
+    (deleteTodo)="deleteTodo.emit($event)"
+  ></app-todo>
+</ul>
